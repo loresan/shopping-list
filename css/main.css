@@ -1,0 +1,202 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+html {
+  min-width: 300px;
+}
+
+
+.main_container{
+	width: 60%;
+	margin: 2em auto;
+	position: relative;
+	border: 3px solid #0b838b;
+	clear:both;
+	padding: 0.5em;
+}
+
+header{
+	background-color: #0b838b;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.2em;
+	
+}
+
+h1{
+	font-size: 16px;
+	color: #e3dede;
+
+}
+
+.items_insertion{
+	width: 80%;
+	margin: auto;
+	list-style: none;
+}
+
+
+.items_insertion li{
+	width: 100%;
+	margin-top: 1em;
+}
+
+.list_items, .bottom_fields{
+	list-style: none;
+	padding: 0;
+}
+
+.list_items li{
+	background-color: #0b838b;
+	padding:0.5em 0;
+	width: 100%;
+	color: #e3dede;
+	font-weight: bold;
+	text-indent: 5px; 
+	margin-top: 1em;
+}
+
+.bottom_fields li{
+	margin-top: 1em;
+}
+
+.bottom_fields input{
+	width: 8em;
+}
+
+input[type="text"]{
+	padding:0.5em ;
+	background:#e3dede;
+	border: none;
+	color: #0b838b;
+	font-weight: bold;
+	width: 8em;
+
+}
+
+
+input[type="button"]{
+	background-color: #0b838b;
+	padding:0.5em;
+	width: 6em;	
+	color: #e3dede;
+	font-weight: bold;
+}
+
+input[name="save"]{
+	width: 8em;
+}
+
+span{
+	float: right;
+	margin-right: 1.5em;
+}
+
+img{
+	width: 20px;
+}
+.cart-icon{
+	display: none;
+}
+
+
+
+
+
+
+@media (min-width:700px) {
+.cart-icon{
+	display: inline;
+	width:3em;
+	margin-right: 2px;
+}
+
+.right-ico{
+	margin-left:20px;
+}
+
+.left-ico{
+	margin-left:20px;
+}
+
+
+.items_insertion{
+	padding: 0;
+	width: 100%;
+}
+
+
+
+.items_insertion li{
+	display: inline-block;
+	margin-right:20px;
+	width:8em;
+}
+
+
+
+.items_insertion li:last-child{
+	text-align: right;
+	margin-left: 0;
+}
+
+.list_items{
+	margin-top:5em;
+	 
+}
+
+.bottom_fields{
+list-style: none;
+float: right;
+}
+
+.bottom_fields li:last-child{
+	text-align: right;
+	margin-top: 2em;
+}
+
+
+
+}
+
+
+@media (min-width: 1024px) {
+.main_container{
+	border: none;
+/*border: 1px solid red;*/
+}
+
+
+header{
+	padding: 0.3em;
+}
+
+h1{
+	font-size: 22px;
+}
+
+.items_insertion li{
+	display: inline-block;
+	margin-right:20px;
+	width:10em;
+}
+
+
+.items_insertion li:last-child{
+	margin-left:7.5em;
+}
+
+input[name="add"]{
+	position: absolute;
+	right: 0.5em;
+	top:8.2em;
+}
+
+}
+

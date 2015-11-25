@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping_List_App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="main_container clearfix">
+	<header class="clearfix">
+		<h1 class="clearfix">
+		<img class="cart-icon left-ico"src="images/cart.png">Shopping List App 
+		<img class="cart-icon  right-ico" src="images/cart.png"></h1>
+	</header>
+	
+		<ul class="items_insertion clearfix">
+			<li><input type="text" value="insert items"></li>
+			<li><input type="text" value="price"/></li>
+			<li><input type="text" value="quantity"/></li>
+			<li><input type="button" name="add" value="add"/></li>
+		</ul>
+
+		<ul class="list_items">
+			<li>Fruit
+			<span> 
+			<img src="images/unchecked.png"> 
+			<img src="images/bin.png">
+			<img src="images/edit.png">
+			</span>
+			</li>
+			<li>Fruit</li>
+			<li>Fruit</li>
+		</ul>
+        <ul class="bottom_fields">
+		<li><input type="text" value="total"/></li>
+		<li><input type="button" name="save" value="save"/></li>
+		</ul>
+
+		<div class="empty"></div>
+	</section>
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/main_script.js"></script>
+</body>
+</html>

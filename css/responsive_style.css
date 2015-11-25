@@ -1,0 +1,308 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+html {
+  min-width: 200px;
+}
+
+
+
+h1{
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700; 
+  padding-top: 2em;
+}
+
+
+.screen_view{
+  display: none;
+}
+
+
+.mobile_view {
+  background-color: #02779E;
+  height:3em;
+  padding-top: 1em;
+}
+
+.mobile_logo{
+  margin-left:5%;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-size:1.5em;
+  letter-spacing:-0.02em;
+  text-shadow: 1px 1px 0px #7BBDD4, 3px 3px 0px #7BBDD4;
+}
+
+.box{
+  padding: 3em;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Fontawsome style icons*/
+
+hr.keyboard-light,
+hr.keyboard-dark {
+  margin: 25px auto 30px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
+}
+
+hr.keyboard-light:after,
+hr.keyboard-dark:after {
+  content: "\f11c";
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-family: FontAwesome;
+  font-size: 2em;
+}
+
+hr.keyboard-light {
+  border-color: #fff;
+}
+
+hr.keyboard-light:after {
+  color: #fff;
+  background-color: #65ACE3;
+}
+
+hr.keyboard-dark {
+  border-color: #02779E;
+}
+
+hr.keyboard-dark:after {
+  color:#02779E;
+  background-color: #fff;
+}
+
+
+.intro{
+  padding:1em;
+}
+
+.intro, .about{
+  background-color: #65ACE3;
+  text-align: center;
+}
+
+.about{
+  padding-bottom:2em;
+}
+
+.intro_text .name{
+  font-size: 2.75em;
+  color: #FFF;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  letter-spacing:0.05em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px #02779E, 4px 4px 0px #02779E;
+}
+
+.intro_text .skills{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.showcase, .contact{
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+   
+   
+}
+
+.contact{
+  padding-bottom: 4em;
+}
+
+.showcase_title h1,.contact_title h1{
+  color:#02779E; 
+ }
+
+ .about_title h1{
+  color: #FFF; 
+ 
+}
+
+.about_me{
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+
+}
+
+
+.cv_btn{
+  clear: both;
+  width: 8em;
+  border: 2px solid #FFF;
+  border-radius:0.3em;
+  color:#FFF;
+  font-size:1.3em; 
+  margin:10px auto;
+  padding: 1em;
+  background-color: transparent;
+}
+
+a{
+  text-decoration:none;
+}
+
+.cv_btn:hover{
+  background-color: #02779E;
+}
+
+
+
+.contact_info{
+  text-align: center;
+  color: #65ACE3;
+  font-size:18px;
+}
+
+
+
+footer{
+  background-color: #02779E;
+  padding-bottom:1em;
+  padding-top:1em;
+  text-align: center;
+}
+
+
+
+.footer_info{
+  text-align: center;
+  color: #fff;
+ }
+
+
+
+.profile_img{
+  display: block;
+  margin:auto;
+  border: 4px solid #02779E;
+  border-radius: 25em;
+
+    
+}
+
+.work_item img{
+  margin:2em auto; 
+  border:2px solid #02779E; 
+}
+
+
+@media (min-width:700px) {
+  
+
+.intro_text .name{
+  font-size: 4.75em;
+  
+}
+
+.box{
+  padding:0;
+}
+  .showcase .box{
+  max-width:100%;
+  margin:0 auto;
+  padding: 3em;
+  text-align: center;
+  }
+
+  .work_item{
+    display: inline; 
+  }
+  
+
+  .work_item img{
+  width: 25%;
+  margin-right:1em;
+  margin-bottom:2em; 
+  }
+
+  
+}
+
+@media (min-width: 1024px) {
+
+.screen_view{
+  display: block;
+}
+.mobile_view{
+  display: none;
+}
+.about_me {
+  float: left;
+  width: 40%;
+  text-align: justify;
+  padding:1em 5% 1em 5%;
+  font-size:18px; 
+}
+
+
+.top_nav {
+  background-color: #02779E;
+  height: 4em;   
+}
+
+.nav_bar{
+  width: 50%;
+  float: right;
+  list-style: none;
+}
+.nav_bar li{
+  display: inline-block;
+  margin-right:1.2em;
+  background-color: #02779E;
+  line-height: 2em;  
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.nav_bar li a:hover{
+  color: #65ACE3;
+ 
+}
+
+.nav_bar li a,.navbar_logo{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  text-decoration: none; 
+}
+
+.navbar_logo{
+  margin-right: 4em;
+  line-height: 2em; 
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-size:2em;
+  letter-spacing:-0.02em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px #7BBDD4, 4px 4px 0px #7BBDD4;
+ }
+
+}
+
+
+
