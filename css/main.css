@@ -25,23 +25,17 @@ header{
 	background-color: #0b838b;
 	text-align: center;
 	margin: 0 auto;
-	padding: 0.2em;
-	
+	padding: 0.2em;	
 }
-
 h1{
 	font-size: 16px;
 	color: #e3dede;
-
 }
-
 .items_insertion{
-	width: 80%;
-	margin: auto;
+	margin:0;
 	list-style: none;
+	padding: 0;
 }
-
-
 .items_insertion li{
 	width: 100%;
 	margin-top: 1em;
@@ -51,7 +45,6 @@ h1{
 	list-style: none;
 	padding: 0;
 }
-
 .list_items li{
 	background-color: #0b838b;
 	padding:0.5em 0;
@@ -61,55 +54,68 @@ h1{
 	text-indent: 5px; 
 	margin-top: 1em;
 }
-
 .bottom_fields li{
 	margin-top: 1em;
+
 }
 
-.bottom_fields input{
-	width: 8em;
+input[type="text"], input[type="number"],input[type="button"]{
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #ccc;
+        background:#e3dede;
+        padding:0.5em ;
+        color: #0b838b;
+	    font-weight: bold;
 }
 
-input[type="text"]{
-	padding:0.5em ;
-	background:#e3dede;
-	border: none;
-	color: #0b838b;
+
+
+#total{
+	border: 1px solid #ccc;
+    background:#e3dede;
+    padding:0.5em ;
+    color: #999;
 	font-weight: bold;
-	width: 8em;
-
+    width:8em;	
 }
-
-
 input[type="button"]{
 	background-color: #0b838b;
 	padding:0.5em;
-	width: 6em;	
 	color: #e3dede;
 	font-weight: bold;
-}
-
-input[name="save"]{
-	width: 8em;
-}
-
-span{
-	float: right;
-	margin-right: 1.5em;
+	height: 40px;
+	width:10em;  
 }
 
 img{
-	width: 20px;
+	width:20px;
+	margin-right:1em;
 }
 .cart-icon{
 	display: none;
 }
+span.img_box{
+	float: right;
+	
+}
 
 
+input[type="checkbox"] {
+    width:19px;
+    height:19px;
+    margin-right: 1em;
+    cursor:pointer;
+}
 
-
-
-
+input.hidden{
+	border: 1px solid #ccc;
+    background:#e3dede;
+    padding:0.5em ;
+    color: #999;
+	font-weight: bold;
+    width:8em;	
+}
 @media (min-width:700px) {
 .cart-icon{
 	display: inline;
@@ -124,41 +130,38 @@ img{
 .left-ico{
 	margin-left:20px;
 }
-
-
+@media screen and (min-width: 700px) and (max-width: 1000px) { 
 .items_insertion{
 	padding: 0;
 	width: 100%;
+	
 }
-
-
 
 .items_insertion li{
 	display: inline-block;
+	margin-right:10px;
+	width:6em;
+}
+
+}
+.items_insertion li{
+	display: inline-block;
 	margin-right:20px;
-	width:8em;
+	width:10em;
 }
 
-
-
-.items_insertion li:last-child{
-	text-align: right;
-	margin-left: 0;
-}
 
 .list_items{
-	margin-top:5em;
-	 
+	margin-top:5em;	 
 }
 
 .bottom_fields{
-list-style: none;
-float: right;
+   list-style: none;
+
 }
 
 .bottom_fields li:last-child{
-	text-align: right;
-	margin-top: 2em;
+    margin-top: 2em;
 }
 
 
@@ -183,20 +186,15 @@ h1{
 
 .items_insertion li{
 	display: inline-block;
-	margin-right:20px;
-	width:10em;
+	
 }
-
 
 .items_insertion li:last-child{
-	margin-left:7.5em;
+      float: right; 
+      margin-right: 0px;
 }
 
-input[name="add"]{
-	position: absolute;
-	right: 0.5em;
-	top:8.2em;
-}
+
 
 }
 

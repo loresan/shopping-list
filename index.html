@@ -15,33 +15,26 @@
 		<img class="cart-icon  right-ico" src="images/cart.png"></h1>
 	</header>
 	
-		<ul class="items_insertion clearfix">
-			<li><input type="text" value="insert items"></li>
-			<li><input type="text" value="price"/></li>
-			<li><input type="text" value="quantity"/></li>
-			<li><input type="button" name="add" value="add"/></li>
+		<ul class="items_insertion">
+			<li><input id="item" type="text" value=""  placeholder="Enter item here"></li>
+			<li><input id="price" type="number"  min="1" value="" placeholder="price"></li>
+			<li><input id="qnt" type="number"  min="1" value="" placeholder="quantity"></li>
+			<li><input id="add_item" type="button"  name="add" value="add"/></li>
+
 		</ul>
 
 		<ul class="list_items">
-			<li>Fruit
-			<span> 
-			<img src="images/unchecked.png"> 
-			<img src="images/bin.png">
-			<img src="images/edit.png">
-			</span>
-			</li>
-			<li>Fruit</li>
-			<li>Fruit</li>
+			
 		</ul>
         <ul class="bottom_fields">
-		<li><input type="text" value="total"/></li>
+		<li><div id="total">Total</div></li>
 		<li><input type="button" name="save" value="save"/></li>
 		</ul>
 
 		<div class="empty"></div>
 	</section>
 	
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/main_script.js"></script>
 </body>
 </html>
