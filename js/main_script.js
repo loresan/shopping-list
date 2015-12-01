@@ -1,6 +1,11 @@
-$(document).ready(initializeForm);
+$(document).ready(function(){
+  //starts the main function
+  initializeEvents();
+});
 
-function initializeForm() {
+
+
+function initializeEvents() {
 
     // initialize the app
     var itemCount = 0;
@@ -12,7 +17,7 @@ function initializeForm() {
     qnt.val("");
     // define what happens when we click the "Add Item" link
     $("#add_item").click( function(){
-             shoppingList();
+            shoppingList();
            }
         );
     $("input#item").keydown(function (enter) {
@@ -52,13 +57,13 @@ function initializeForm() {
         $('.cbox').change(function(){
             var total = 0;
             $('.cbox:checked').each(function(){
-                    total+=parseInt($(this).parent().prev().html());
+                total+=parseInt($(this).parent().prev().html());
             });
               
-               $("#total").text('$' + total);
+            $("#total").text('$' + total);
         });
 
-        //edit items and add Total
+        //edit items text
         $('.edit').click(function() {
             var text = $('.item_text').text();  
             var input = $('<input type="text" class="hidden"  value="'+ text +'" />')
