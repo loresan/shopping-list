@@ -35,7 +35,7 @@ function initializeEvents() {
         var itemToBuy = itemInput.val();
         var priceShow  = price.val();
         var qntItem = qnt.val();
-		itemInput.val("");
+				itemInput.val("");
         price.val("");
         qnt.val("");
         var white_space= "&nbsp;&nbsp;&nbsp;&nbsp;";
@@ -66,24 +66,32 @@ function initializeEvents() {
         //edit items text
         $('.edit').click(function() {
             var text = $('.item_text').text();  
-            var input = $('<input type="text" class="hidden"  value="'+ text +'" />')
+            //console.log(text);
+
+            var input = $('<input type="text" class="hidden"  value="'+ text +'" />');
+            var uneditedListItem = $(this).parent().prev().prev();
+            var originalValue = input[0].defaultValue;
             $(this).each(function(){
-                    $(this).parent().prev().prev().text('').append(input);
+            	uneditedListItem.text('').html(input);
+                
             }); 
             
             $('input.hidden').blur(function() { 
               var defaultValue =  $(this).val();
-              $(this).parent().text(defaultValue);
+              if (defaultValue != '') {
+              	$(this).parent().text(defaultValue);
+              }
+              else {
+              	$(this).parent().text(originalValue)
+              }
               $('input.hidden').hide(); 
                                   
             });
 
             $('input[type="text"]').keypress(function(event) {
                 if (event.keyCode == '13') {
-                      var defaultValue =  $(this).val();
-                      $(this).parent().prev().prev().text(defaultValue);
-                      $('input.hidden').hide();
-                   }
+                    $('input.hidden').hide();
+                 }
             });
         }); 
 
